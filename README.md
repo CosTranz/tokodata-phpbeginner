@@ -1,34 +1,46 @@
-Menjalankan Proyek Tokodata
-Ini adalah proyek Tokodata yang dibuat menggunakan PHP dan MySQL. Proyek ini dijalankan di server lokal menggunakan XAMPP.
+# Menjalankan Proyek Tokodata
 
-Langkah-langkah untuk Menjalankan Proyek
-Install XAMPP:
+Proyek Tokodata adalah aplikasi web sederhana yang dibuat menggunakan PHP dan MySQL. Proyek ini dirancang untuk dijalankan di server lokal menggunakan XAMPP.
 
-Unduh dan install XAMPP sesuai dengan sistem operasi Anda.
-Start Apache dan MySQL:
+## Instalasi
 
-Buka XAMPP Control Panel.
-Klik tombol Start di samping Apache dan MySQL untuk menjalankan server.
-Salin Proyek ke Direktori htdocs:
+### 1. Instal XAMPP
 
-Salin folder proyek tokodata ke dalam direktori htdocs di direktori instalasi XAMPP. Biasanya, direktori htdocs berada di C:\xampp\htdocs\.
-Impor Database:
+- Unduh XAMPP dari [situs web resmi](https://www.apachefriends.org/index.html).
+- Ikuti instruksi instalasi yang diberikan.
 
-Buka phpMyAdmin melalui XAMPP Control Panel (klik tombol Admin di samping MySQL).
-Buat database baru dengan nama tokodata.
-Impor file SQL ke database tokodata dari folder proyek yang bernama database.sql.
-Konfigurasi Koneksi Database:
+### 2. Start Apache dan MySQL
 
-Buka file config.php di dalam folder tokodata.
-Sesuaikan konfigurasi database ($host, $username, $password, $database) sesuai dengan konfigurasi MySQL Anda.
-Akses Proyek di Browser:
+- Buka XAMPP Control Panel.
+- Klik tombol Start di samping Apache dan MySQL.
 
-Buka browser dan ketikkan URL berikut: http://localhost/tokodata/index.php.
-Login Sebagai Admin:
+### 3. Salin Proyek ke Direktori htdocs
 
-Gunakan username admin dan password admin untuk masuk sebagai admin.
+- Salin folder proyek `tokodata` ke dalam direktori `htdocs` di direktori instalasi XAMPP. 
+  Contoh: `C:\xampp\htdocs\tokodata`.
 
-Struktur Proyek
+### 4. Impor Database
+
+- Buka phpMyAdmin melalui XAMPP Control Panel (klik tombol Admin di samping MySQL).
+- Buat database baru dengan nama `tokodata`.
+- Impor file `database.sql` ke database `tokodata` dari folder proyek.
+
+### 5. Konfigurasi Koneksi Database
+
+- Buka file `config.php` di dalam folder `tokodata`.
+- Sesuaikan konfigurasi database (`$host`, `$username`, `$password`, `$database`) sesuai dengan konfigurasi MySQL Anda.
+
+### 6. Akses Proyek di Browser
+
+- Buka browser dan ketikkan URL berikut: `http://localhost/tokodata/index.php`.
+
+### 7. Login Sebagai Admin
+
+- Gunakan username `admin` dan password `admin` untuk masuk sebagai admin.
+
+## Struktur Proyek
+
+```plaintext
 tokodata/
 ├── assets/
 ├── config.php
@@ -36,6 +48,3 @@ tokodata/
 ├── index.php
 ├── login.php
 └── ...
-
-Catatan
-Pastikan XAMPP berjalan dengan baik dan tidak ada konflik dengan port lain yang digunakan. Jika Anda mengalami masalah saat menjalankan proyek, pastikan untuk memeriksa log error di XAMPP untuk informasi lebih lanjut.
